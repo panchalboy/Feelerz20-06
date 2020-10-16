@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImagePreview"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        tools:context=".ImagePreviewActivity">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/clear3" />
+
+        <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/Share_BTN"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:padding="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/share_icon2" />
+
+    </RelativeLayout>
+
+</FrameLayout>

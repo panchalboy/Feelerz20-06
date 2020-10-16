@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_AppFragment"
+    android:clickable="true"
+    android:layout_above="@+id/Main_Btm_Nav">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_color">
+
+        <RelativeLayout
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/Back_Btn"
+                android:layout_width="40dp"
+                android:layout_height="44dp"
+                android:background="@drawable/back_btn_shape3"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/AboutApp_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="About App"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/heading"
+            android:background="@drawable/background_color2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/aboutApp_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_txt"/>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

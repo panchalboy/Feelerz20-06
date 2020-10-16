@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Home"
+        android:enabled="true"
+        android:icon="@drawable/home_nav_btn_off_shape"
+        android:title="Home"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/Chat"
+        android:enabled="true"
+        android:icon="@drawable/message_nav_btn_off_shape"
+        android:title="Chat"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/Feel"
+        android:enabled="true"
+        android:icon="@drawable/feel_nav_btn_off_shape"
+        android:title="Feel"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/Notification"
+        android:enabled="true"
+        android:icon="@drawable/notification_nav_btn_off_shape"
+        android:title="Notification"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/Profile"
+        android:enabled="true"
+        android:icon="@drawable/profile_nav_btn_off_shape"
+        android:title="Profile"
+        app:showAsAction="always" />
+
+</menu>

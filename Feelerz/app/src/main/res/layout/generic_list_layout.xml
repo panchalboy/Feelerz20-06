@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/Main_Btm_Nav"
+    android:clickable="true"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ListView
+        android:id="@+id/generic_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/generic_profile_item_layout"
+        android:dividerHeight="10dp"
+        android:divider="@null"
+        android:padding="7dp"/>
+
+</LinearLayout>

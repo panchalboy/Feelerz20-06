@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:background="@drawable/background_color">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+
+        >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/Mention_Userprofile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:civ_border_width="0dp"
+        app:civ_border_color="@android:color/black"
+        android:background="@drawable/or_username" />
+
+    <TextView
+        android:id="@+id/Mention_UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Mention_Userprofile"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:text="Ravi Baghel"
+        android:textSize="15dp"
+        android:padding="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

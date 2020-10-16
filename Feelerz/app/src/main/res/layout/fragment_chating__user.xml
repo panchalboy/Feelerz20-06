@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chating_UserFragment"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:clickable="true"
+    android:layout_above="@+id/Main_Btm_Nav">
+
+    <RelativeLayout
+        android:id="@+id/UserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#FFF">
+
+        <Button
+            android:id="@+id/Back_btn"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/back_btn_shape2"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ChatUser_profilePic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/Back_btn"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/default_profile" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ravi Baghel"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimary"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ChatUser_profilePic"/>
+
+
+        <View
+            android:id="@+id/feeling_shape"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/feeling_text"
+            android:layout_alignRight="@+id/feeling_text"
+            android:background="@drawable/n1_shape"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@android:color/holo_orange_light"/>
+
+        <TextView
+            android:id="@+id/feeling_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:layout_alignParentRight="true"
+            android:text="    Loving    "
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true"
+        android:overScrollMode="always"
+        android:transcriptMode="normal"
+        android:layout_below="@id/UserInfo"
+        android:layout_above="@id/textBox"
+        android:background="#80CEE5F0"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="2dp"
+        tools:listitem="@layout/chat_left_layout"
+        >
+
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/textBox"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9E9E9E"/>
+
+
+        <RelativeLayout
+            android:id="@+id/TextMessageLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/chat_box_field"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="60dp"
+                android:hint="Write your message..."
+                android:background="@drawable/comment_background" />
+
+            <ImageButton
+                android:id="@+id/msg_send_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/post_comment_btn2"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"  />
+
+        </RelativeLayout>
+
+    <View
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9E9E9E"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

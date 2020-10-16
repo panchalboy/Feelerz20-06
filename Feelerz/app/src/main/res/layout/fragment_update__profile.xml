@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfileFragment"
+    android:layout_above="@+id/Main_Btm_Nav"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_color">
+
+        <RelativeLayout
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/Back_Btn"
+                android:layout_width="40dp"
+                android:layout_height="44dp"
+                android:background="@drawable/back_btn_shape3"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/Update_Profile_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="Update Profile"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <View
+                    android:id="@+id/Line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#CC000000"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/ScrollView_Update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading">
+
+            <RelativeLayout
+                android:id="@+id/Relative_Up1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Profile"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/or_username"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/Full_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/Profile"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    android:hint="Name"
+                    android:textColorHint="@color/color_input_txt"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/update_txt_shape" />
+
+                <!--<NumberPicker
+                    android:id="@+id/Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/Full_Name"
+                    android:textColorHint="@color/color_input_txt"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:background="@drawable/update_txt_shape" />-->
+
+                <TextView
+                    android:id="@+id/Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    android:hint="Gender"
+                    android:textColorHint="@color/color_input_txt"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/Full_Name"
+                    android:background="@drawable/update_txt_shape" />
+
+                <TextView
+                    android:id="@+id/Country"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/Gender"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    android:hint="Country"
+                    android:textColorHint="@color/color_input_txt"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/update_txt_shape" />
+
+                <EditText
+                    android:id="@+id/Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/Country"
+                    android:inputType="number"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    android:hint="Mobile"
+                    android:textColorHint="@color/color_input_txt"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/update_txt_shape" />
+
+                <TextView
+                    android:id="@+id/Date_Of_Birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/Mobile"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    android:hint="Date of Birth"
+                    android:textColorHint="@color/color_input_txt"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/update_txt_shape" />
+
+                <EditText
+                    android:id="@+id/Biography"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/Date_Of_Birth"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    android:hint="Enter Bio..."
+                    android:textColorHint="@color/color_input_txt"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:gravity="top"
+                    android:background="@drawable/update_txt_shape" />
+
+                <EditText
+                    android:id="@+id/UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/Biography"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    android:hint="Enter User Name"
+                    android:textColorHint="@color/color_input_txt"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:background="@drawable/update_txt_shape" />
+
+                <TextView
+                    android:id="@+id/UpdateProfile_btn"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/update_btn_shape"
+                    android:padding="3dp"
+                    android:text="Update Profile"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText"
+                    android:layout_below="@+id/UserName"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

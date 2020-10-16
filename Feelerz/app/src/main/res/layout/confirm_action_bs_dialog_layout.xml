@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/upperOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search_box">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/deletePost"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <TextView
+                android:layout_below="@+id/header"
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Nice"
+                android:maxLines="1"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/div"
+                android:layout_below="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_input_txt"/>
+
+            <Button
+                android:layout_below="@+id/div"
+                android:id="@+id/button_accept"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Delete"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="@color/color_btn_txt"
+                android:gravity="center"
+
+
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+            <Button
+                android:id="@+id/Cancel_BTN"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Cancel"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/color_btn_txt"
+                android:background="@drawable/search_box"
+                tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</RelativeLayout>

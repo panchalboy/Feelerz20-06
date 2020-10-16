@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:layout_above="@+id/Main_Btm_Nav"
+    android:id="@+id/Profile_fragement"
+    android:clickable="true">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/Main_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp" >
+
+                        <ImageView
+                            android:id="@+id/Profile_Back"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/R1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="350dp"
+                                android:alpha=".8"
+                                android:background="@drawable/im" />
+
+                            <Button
+                                android:id="@+id/Profile_Edit"
+                                android:layout_width="20dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/profile_menu_icon_shape" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/profile_pic"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:scaleType="centerCrop"
+                                android:background="@drawable/default_profile" />
+
+                            <TextView
+                                android:id="@+id/User_name_profile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/profile_pic"
+                                android:layout_centerHorizontal="true"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#FFF"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/User_id_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/User_name_profile"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:text=""
+                                android:textColor="#FFF"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/Following"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/User_id_txt"
+                                android:layout_toLeftOf="@+id/Divider1"
+                                android:text="100 Following"
+                                android:lines="1"
+                                android:textColor="#FFF"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="12dp"
+                                android:autoSizeMaxTextSize="15dp"
+                                android:autoSizeStepGranularity="1dp"/>
+
+                            <TextView
+                                android:id="@+id/Divider1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/User_id_txt"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_toLeftOf="@+id/Followers"
+                                android:text="|"
+                                android:textColor="#FFF"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="12dp"
+                                android:autoSizeMaxTextSize="15dp"
+                                android:autoSizeStepGranularity="1dp"/>
+
+                            <TextView
+                                android:id="@+id/Followers"
+                                android:clickable="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/User_id_txt"
+                                android:layout_centerInParent="true"
+                                android:text="120 Follower"
+                                android:lines="1"
+                                android:textColor="#FFF"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="12dp"
+                                android:autoSizeMaxTextSize="15dp"
+                                android:autoSizeStepGranularity="1dp"/>
+
+                            <TextView
+                                android:id="@+id/Divider2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/User_id_txt"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_toRightOf="@+id/Followers"
+                                android:text="|"
+                                android:textColor="#FFF"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="12dp"
+                                android:autoSizeMaxTextSize="15dp"
+                                android:autoSizeStepGranularity="1dp"/>
+
+                            <TextView
+                                android:id="@+id/Feels"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/User_id_txt"
+                                android:layout_toRightOf="@+id/Divider2"
+                                android:text="130 Feels"
+                                android:lines="1"
+                                android:textColor="#FFF"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="12dp"
+                                android:autoSizeMaxTextSize="15dp"
+                                android:autoSizeStepGranularity="1dp"/>
+
+                            <TextView
+                                android:id="@+id/Gender_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Feels"
+                                android:layout_marginStart="100dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#FFF"
+                                 />
+
+                            <TextView
+                                android:id="@+id/Gender_options_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Gender_txt"
+                                android:layout_marginLeft="105dp"
+                                android:textColor="#FFF" />
+
+                            <TextView
+                                android:id="@+id/Age_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Feels"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="115dp"
+                                android:textColor="#FFF" />
+
+                            <TextView
+                                android:id="@+id/Age_options_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Age_txt"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="120dp"
+
+                                android:textColor="#FFF" />
+
+                            <TextView
+                                android:id="@+id/Bio_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Gender_options_txt"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#FFF" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/Main_profile">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#C3000000"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/profile_posts"
+                    android:layout_below="@id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/profile_post_layout"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

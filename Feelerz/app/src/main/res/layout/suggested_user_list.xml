@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SuggestedUser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@android:color/white"
+    android:clickable="true"
+    android:background="@drawable/generic_profile_item_background" >
+
+    <RelativeLayout
+        android:padding="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/ViewProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/SuggestedUserPic"
+            android:src="@drawable/default_profile" />
+
+        <TextView
+            android:id="@+id/SuggestedUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/SuggestedUserPic"
+            android:layout_marginRight="10dp"
+            android:gravity="top"
+            android:text="Suggested User Name"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/Follow_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Follow"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            tools:ignore="HardcodedText"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textAllCaps="false"
+            android:background="@drawable/message_follow_following_btn_shape"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

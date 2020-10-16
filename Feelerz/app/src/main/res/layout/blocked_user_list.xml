@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/blockedUser"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:backgroundTint="@android:color/white"
+    android:clickable="true"
+    android:background="@drawable/generic_profile_item_background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/blockedUserPic"
+            android:src="@drawable/default_profile" />
+
+        <TextView
+            android:id="@+id/blockedUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/blockedUserPic"
+            android:layout_toStartOf="@+id/unblock_btn"
+            android:layout_marginRight="10dp"
+            android:gravity="top"
+            android:text="Blocked User Name"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/unblock_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Unblock"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            tools:ignore="HardcodedText"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/message_follow_following_btn_shape"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

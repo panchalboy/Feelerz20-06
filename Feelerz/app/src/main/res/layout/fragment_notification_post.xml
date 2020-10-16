@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Public_SectionFragment"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:clickable="true"
+    android:id="@+id/notification_posts_id"
+    android:background="@drawable/background_color"
+    android:layout_above="@+id/Main_Btm_Nav">
+
+        <RelativeLayout
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/Back_Btn"
+                    android:layout_width="40dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/back_btn_shape3"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/Heading_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="Notification Post"
+                    android:textColor="#FFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_centerHorizontal="true" />
+
+                <LinearLayout
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                        <View
+                            android:id="@+id/Line"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#9E9E9E"/>
+
+                </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/single_post"
+            android:layout_below="@+id/heading"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/post_layout"
+            />
+
+
+
+
+
+
+</RelativeLayout>

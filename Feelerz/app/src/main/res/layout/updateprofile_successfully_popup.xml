@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/popup_corner_radius">
+
+        <TextView
+            android:id="@+id/Success_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Success"
+            android:textStyle="bold"
+            android:textColor="@color/colorPopupHeading"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/Success_msg_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="Profile has been update successfully"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp">
+
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9E9E9E"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/OK_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="OK"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPopupButton"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Suggested_FriendFragment"
+    android:layout_above="@+id/Main_Btm_Nav"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_color">
+
+        <RelativeLayout
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/Skip_Btn"
+                android:layout_width="60dp"
+                android:layout_height="44dp"
+                android:text="Skip"
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/Back_Btn"
+                android:layout_width="40dp"
+                android:layout_height="44dp"
+                android:background="@drawable/back_btn_shape3"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/SuggestedFriend_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="Suggested Friend"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <View
+                    android:id="@+id/Line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#CC000000"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+                android:id="@+id/pull_to_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/heading"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                tools:ignore="ScrollViewSize">
+
+                <ListView
+                    android:id="@+id/SuggestedUserList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="10dp"
+                    android:fitsSystemWindows="true"
+                    android:orientation="vertical"
+                    android:overScrollMode="always"
+                    android:transcriptMode="normal"
+                    tools:listitem="@layout/suggested_user_list" />
+                
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

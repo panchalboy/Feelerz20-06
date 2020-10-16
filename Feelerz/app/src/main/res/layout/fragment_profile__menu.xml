@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_MenuFragment"
+    android:background="@color/color_txt"
+    android:clickable="true"
+    android:layout_above="@+id/Main_Btm_Nav">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:orientation="horizontal"
+            android:background="@drawable/background_color">
+
+            <Button
+                android:id="@+id/Back_Btn"
+                android:layout_width="40dp"
+                android:layout_height="44dp"
+                android:background="@drawable/back_btn_shape3"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/profileMenu_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="My Profile"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/background_color"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/default_profile"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/Relative_p1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image">
+
+            <TextView
+                android:id="@+id/Txt_User_Name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_input_txt"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="145dp"
+                android:layout_below="@+id/Txt_User_Name">
+
+                <RelativeLayout
+                    android:id="@+id/UP_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/UP"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/update_profile_icon_shape"  />
+
+                    <TextView
+                        android:id="@+id/UP_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#FFFFFF"
+                        android:text="Update Profile"
+                        android:textColor="@color/color_input_txt"
+                        android:textSize="15dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/UP"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/color_input_txt"/>
+                <RelativeLayout
+                    android:id="@+id/SF_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/SF"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/suggested_friend_icon_shape" />
+
+                    <TextView
+                        android:id="@+id/SF_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#FFFFFF"
+                        android:text="Suggested Friend"
+                        android:textColor="@color/color_input_txt"
+                        android:textSize="15dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/SF"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/color_input_txt"/>
+                <RelativeLayout
+                    android:id="@+id/CP_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/CP"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/change_password_icon_shape" />
+
+                    <TextView
+                        android:id="@+id/CP_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#FFFFFF"
+                        android:text="Change Password"
+                        android:textColor="@color/color_input_txt"
+                        android:textSize="15dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/CP"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/color_input_txt"/>
+                <RelativeLayout
+                    android:id="@+id/PP_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/PP"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/pripacy_policy_icon_shape" />
+
+                    <TextView
+                        android:id="@+id/PP_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#FFFFFF"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/color_input_txt"
+                        android:textSize="15dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/PP"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/color_input_txt"/>
+
+                <RelativeLayout
+                    android:id="@+id/AA_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/AA"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/about_app_icon_shape" />
+
+                    <TextView
+                        android:id="@+id/AA_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#FFFFFF"
+                        android:text="About App"
+                        android:textColor="@color/color_input_txt"
+                        android:textSize="15dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/AA"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/color_input_txt"/>
+                <RelativeLayout
+                    android:id="@+id/S_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/S"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/support_icon_shape" />
+
+                    <TextView
+                        android:id="@+id/S_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#FFFFFF"
+                        android:text="Support"
+                        android:textColor="@color/color_input_txt"
+                        android:textSize="15dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/S"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/color_input_txt"/>
+                <RelativeLayout
+                    android:id="@+id/BUL_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/BUL"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/block_user_icon_shape" />
+
+                    <TextView
+                        android:id="@+id/BUL_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#FFFFFF"
+                        android:text="Blocked User List"
+                        android:textColor="@color/color_input_txt"
+                        android:textSize="15dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/BUL"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/color_input_txt"/>
+                <RelativeLayout
+                    android:id="@+id/L_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/L"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/logout_icon_shape" />
+
+                    <TextView
+                        android:id="@+id/L_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#FFFFFF"
+                        android:text="Logout"
+                        android:textColor="@color/color_input_txt"
+                        android:textSize="15dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/L"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/color_input_txt"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

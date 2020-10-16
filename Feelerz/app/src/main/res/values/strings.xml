@@ -1,0 +1,55 @@
+<resources>
+
+    <string name="web_client_id">627459971711-a90bnjkkav027cufsj97gvk527it2u8n.apps.googleusercontent.com</string>
+    <string name="app_name">Feelerz</string>
+
+    <string name="deleteComment">Do you want to delete this comments ?</string>
+    <string name="deletePost">Do you want to delete this post ?</string>
+
+    <string name="copyright">Copyright Works with Social Media @2020</string>
+
+    <string name="postHint">Describe here what made you feel this way...</string>
+
+    <string name="txt_id">@ramyadav</string>
+
+    <style name="CustomTextAppearanceTab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Login Strings -->
+    <string name="login_email">Login ID</string>
+    <string name="login_password">Password</string>
+    <string name="login_forget_password">Forget Password</string>
+    <string name="Login_login_btn">Login</string>
+    <string name="Login_registration_btn">Registration</string>
+    <!-- Login String -->
+
+    <!--Registration String-->
+    <string name="Registration_Title">Registration</string>
+    <string name="Registration_firstName">Enter First Name</string>
+    <string name="Registration_lastName">Enter Last Name</string>
+    <string name="Registration_email">Enter Email ID</string>
+    <string name="Registration_userName">User Name</string>
+    <string name="Registration_country">Select Country</string>
+    <string name="Registration_number">Enter Number</string>
+    <string name="Registration_password">Enter Password</string>
+    <string name="Registration__confirmPassword">Enter Confirm Password</string>
+    <string name="Registration_Submit_btn">Submit</string>
+    <!--Registration String-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Link" translatable="true">http://feelerzapp.com/social_media/Api/</string>
+    <string name="ImageURL" translatable="true">http://feelerzapp.com/social_media/assets/profile_img/</string>
+    <string name="PostURL" translatable="true">http://feelerzapp.com/social_media/assets/post/</string>
+
+
+    <!-- faceboook -->
+    <string name="facebook_app_id">201371251106394</string>
+    <string name="fb_login_protocol_scheme">fb201371251106394</string>
+
+    <bool name="is_left_to_right">false</bool>
+
+</resources>

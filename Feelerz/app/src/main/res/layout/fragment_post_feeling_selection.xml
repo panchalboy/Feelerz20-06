@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="false"
+    android:id="@+id/postFeelSelectionId"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/Main_Btm_Nav"
+    tools:context=".PostFeelingSelection"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:id="@+id/relative_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/background_color">
+
+        <TextView
+            android:id="@+id/createPostSearchbg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/search_box"
+            android:textSize="17dp"
+            android:textColor="@color/color_input_txt"
+            android:text="Search"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/Feel_layout_btn"
+            android:drawableLeft="@drawable/search_icon_shape" />
+
+        <Button
+            android:id="@+id/Feel_layout_btn"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logo"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/relative_2"
+        android:id="@+id/friends_post_samples"
+        android:orientation="vertical"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        tools:listitem="@layout/post_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:clickable="true"
+        />
+    <View
+        android:id="@+id/feeling_select_bkg"
+        android:layout_width="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:background="@drawable/select_feeling_background" />
+
+    <TextView
+        android:id="@+id/createPostText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="sans"
+        android:textSize="15dp"
+        android:text="How do you feel?"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/feeling_select_bkg"
+        android:translationY="-40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/feeling1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/feeling1"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:translationX="-130dp"
+            android:translationY="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+
+
+        <ImageView
+            android:id="@+id/feeling5"
+            android:clickable="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:translationX="130dp"
+            android:translationY="0dp"
+            android:background="@drawable/feeling5"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+
+
+        <ImageView
+            android:id="@+id/feeling2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/feeling2"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:translationX="-82dp"
+            android:translationY="-70dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/feeling4"
+            android:clickable="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:translationX="82dp"
+            android:translationY="-70dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:background="@drawable/feeling4" />
+
+        <ImageView
+            android:id="@+id/feeling3"
+            android:clickable="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:translationX="0dp"
+            android:translationY="-105dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/feeling3"
+            android:scaleType="fitXY" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/Main_Btm_Nav"
+    tools:context=".AllUsersFromSearch"
+    android:clickable="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AllUsersFromSearchActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:tooltipText="Users"
+                android:background="@drawable/background_color" />
+
+            <ImageButton
+                android:id="@+id/Back_Btn"
+                android:layout_width="36dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/back_btn_shape3"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/title_search_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Query Text"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp" >
+
+
+            <ListView
+                android:id="@+id/all_querty_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="3px"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

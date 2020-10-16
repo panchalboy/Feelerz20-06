@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="35sp"
+    android:textSize="13dp"
+    android:textColor="#FFF"
+    android:scrollbars="vertical"
+    android:gravity="center_vertical"
+    android:paddingStart="10dip"
+    android:paddingEnd="0dip"
+    android:background="@drawable/post_publiction_option_icon_shape3"/>
+
+<!--<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="25dp"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="#FFF"
+    android:textSize="13dp"
+    android:gravity="center_vertical"
+    android:paddingStart="10dip"
+    android:paddingEnd="0dip"
+    android:background="@drawable/post_publiction_option_icon_shape3" />-->
+
+<!--<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:textSize="20dp"
+    android:gravity="center"
+    android:paddingRight="5dp"
+    android:clickable="false"
+    android:drawableLeft="@drawable/post_publiction_option_icon_shape"
+    android:background="@drawable/post_share_option_btn_shape" >
+
+
+
+</TextView>-->
+
+<!--
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/options"
+android:orientation="vertical"
+android:layout_width="250dp"
+android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="250dp"
+    android:layout_height="30dp"
+    android:background="#9C03A9F4">
+
+    <View
+        android:id="@+id/topCorner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/corner_share_option"/>
+
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/topCorner"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:background="@drawable/background_options_post">
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shareoptioncorner_shape">
+
+            <View android:id="@+id/icon1"
+                android:background="@drawable/friends_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Friend"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/icon1"
+                android:layout_toLeftOf="@+id/RadioButton1"/>
+
+            <RadioButton
+                android:id="@+id/RadioButton1"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:buttonTint="#FFF"/>
+
+        </RelativeLayout>
+
+    </RadioGroup>
+
+</LinearLayout>
+
+</LinearLayout>-->

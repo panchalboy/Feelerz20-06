@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:gravity="top" android:right="0dp" android:left="0dp"
+        android:top="0dp"
+        android:bottom="0dp">
+        <layer-list>
+            <item
+                android:drawable="@drawable/corner" >
+            </item>
+        </layer-list>
+    </item>-->
+    <item>
+        <shape
+            android:shape="rectangle">
+            <gradient android:angle="0"
+                android:startColor="#0880DC"
+                android:endColor="#2BC9FE"
+                android:type="linear"/>
+            <corners android:radius="5dp"/>
+            <stroke android:color="#FFF"
+                android:width="1dp"/>
+        </shape>
+    </item>
+    <!--<item android:drawable="@drawable/corner"></item>-->
+    <item android:gravity="top" android:right="0dp" android:left="0dp"
+        android:top="0dp"
+        android:bottom="100dp">
+        <layer-list>
+            <item
+                android:drawable="@drawable/corner" >
+            </item>
+        </layer-list>
+    </item>
+
+    <!--<item android:gravity="center_vertical|left" android:right="10dp" android:left="10dp"
+        android:top="80dp"
+        android:bottom="2dp">
+        <layer-list>
+            <item
+                 android:drawable="@drawable/friends" >
+                 <shape android:shape="rectangle">&ndash;&gt;
+                 </shape>&ndash;&gt;
+             </item>
+        </layer-list>
+    </item>-->
+</layer-list>

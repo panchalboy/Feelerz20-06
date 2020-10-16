@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_part"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@android:color/white"
+    android:clickable="true"
+    android:background="@drawable/generic_profile_item_background" >
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/profile_pic"
+        android:src="@drawable/default_profile" />
+
+        <!--<androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/profile_pic">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="Ravi baghel"
+                    tools:ignore="HardcodedText" />
+
+            </View>
+
+            &lt;!&ndash;<TextView
+                android:id="@+id/UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:gravity="top"
+                android:maxLines="1"
+                android:text="Ravi baghel"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+            <TextView
+                android:id="@+id/UserNoti_Contain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:gravity="top"
+                android:maxLines="2"
+                android:text=" hugged on your 'Sunny day and work in progress"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                app:layout_constraintStart_toEndOf="@+id/UserName"
+                tools:ignore="MissingConstraints" />&ndash;&gt;
+
+        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:gravity="top"
+        android:maxLines="2"
+        android:text="jaja hugged on your 'Sunny day and work in progress"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:textDirection="ltr"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/profile_pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/notification_time"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="15 hours ago "
+            android:gravity="bottom|left"
+            android:textSize="13dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/darker_gray" />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:id="@+id/notification_option"
+            android:background="@drawable/report_more_shape"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

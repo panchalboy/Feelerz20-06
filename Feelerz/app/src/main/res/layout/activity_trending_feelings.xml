@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/FeelingViewGroup"
+    android:layout_above="@+id/Main_Btm_Nav"
+    android:clickable="true"
+    tools:context=".TrendingFeelings">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="300dp"
+            android:id="@+id/feelings_scroller"
+            app:flexWrap="wrap"
+            app:flexDirection="row"
+            app:alignContent="flex_start"
+            app:alignItems="flex_end"
+            app:justifyContent="space_evenly" >
+            </com.google.android.flexbox.FlexboxLayout>
+
+    </ScrollView>
+    
+
+</RelativeLayout>

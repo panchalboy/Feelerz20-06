@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#2594C9</color>
+    <color name="colorAccent">#9E9E9E</color>
+
+
+    <color name="color_btn_txt">#3A97D1</color>
+    <color name="color_txt">#FFFFFF</color>
+    <color name="color_activity_Title">#FFFFFF</color>
+    <color name="color_input_txt">#9E9E9E</color>
+    <color name="color_gray_background">#f0f0f0</color>
+
+    <color name="colorProgressbar">#CE000000</color>
+
+    <!--popup colors-->
+
+    <color name="colorPopupHeading">#4CAF50</color>
+    <color name="colorPopupSubHeading">#CC000000</color>
+    <color name="colorPopupHeadingError">#FA2A1B</color>
+    <color name="colorPopupButton">#CC03A9F4</color>
+
+</resources>

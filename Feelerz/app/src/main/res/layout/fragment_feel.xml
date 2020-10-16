@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreatePostFragment"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@drawable/background_color"
+    android:layout_above="@+id/Main_Btm_Nav">
+
+    <RelativeLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Back_Btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn_shape3"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/CreatePostTitle_page"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Add New Post"
+            android:textColor="#FFF"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/post_shape">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/default_profile" />
+
+                <TextView
+                    android:id="@+id/Post_User_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ravi Baghel"
+                    android:layout_toRightOf="@+id/profile_pic"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <!--<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="@drawable/post_share_option_btn_shape"
+                    android:layout_toRightOf="@+id/profile_pic"
+                    android:layout_below="@+id/Post_User_Name"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/post_publiction_option_icon_shape"
+                    android:text="Friend"
+                    android:gravity="left|center_vertical"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_input_txt"/>-->
+
+                <Spinner
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/profile_pic"
+                    android:layout_below="@+id/Post_User_Name"
+                    android:layout_marginStart="20dp"
+                     />
+
+                <View
+                    android:id="@+id/feeling_shape"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/feeling_text"
+                    android:layout_alignRight="@+id/feeling_text"
+                    android:background="@drawable/n1_shape"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@android:color/holo_orange_light"/>
+
+                <!--<TextView
+                    android:id="@+id/feeling_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:layout_alignParentRight="true"
+                    android:text="    happy    "
+                    android:textColor="@android:color/white"
+                    android:textSize="13dp"
+                    android:textStyle="normal" />-->
+
+                <Spinner
+                    android:id="@+id/feeling_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/post_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/postHint"
+                android:textColorHint="@color/color_input_txt"
+                android:textColor="#000"
+                android:typeface="sans"
+                android:background="@null"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp" >
+
+                <ImageView
+                    android:id="@+id/post_image"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/below_post_pane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/camera"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/camera_shape"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"/>
+
+                <Button
+                    android:id="@+id/gallery"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/gallery_shape"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/camera"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#9E9E9E"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/post_button"
+                    android:layout_width="160dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    android:text="Post"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/color_input_txt"
+                    android:textAllCaps="false"
+                    android:background="@drawable/post_btn_shape"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

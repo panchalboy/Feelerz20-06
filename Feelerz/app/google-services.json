@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "627459971711",
+    "firebase_url": "https://feelerz-3b9c2.firebaseio.com",
+    "project_id": "feelerz-3b9c2",
+    "storage_bucket": "feelerz-3b9c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627459971711:android:512eec1aa362a71516bd4a",
+        "android_client_info": {
+          "package_name": "com.jassimalmunaikh.feelerz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627459971711-a90bnjkkav027cufsj97gvk527it2u8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV91xQ4IlKxwcdacJj_NOTBNuudvKvX7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627459971711-a90bnjkkav027cufsj97gvk527it2u8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

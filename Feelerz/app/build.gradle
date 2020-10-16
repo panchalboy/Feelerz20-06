@@ -1,0 +1,111 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+    // Change for Swipe implementation
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.jassimalmunaikh.feelerz"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 13
+        versionName "2.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    implementation([
+            'com.snapchat.kit.sdk:login:1.1.4',
+            'com.snapchat.kit.sdk:core:1.1.4'
+    ])
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    //social login
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    //noinspection GradleCompatible
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'org.apache.commons:commons-text:1.6'
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+    implementation 'com.google.android:flexbox:1.0.0'
+    //Swipe dependency
+    //noinspection GradleDependency
+//    implementation 'com.wdullaer:swipeactionadapter:2.0.0'
+
+    implementation('com.squareup.picasso:picasso:2.71828') {
+        exclude group: 'com.android.support'
+        exclude module: ['exifinterface', 'support-annotations']
+    }
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+
+
+    implementation('com.davemorrissey.labs:subsampling-scale-image-view:3.10.0')
+            {
+                exclude group: 'com.android.support'
+                exclude module: ['exifinterface', 'support-annotations']
+            }
+
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+
+    testImplementation 'junit:junit:4.12'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.wdullaer:swipeactionadapter:2.0.0'
+//    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+//    implementation 'org.jsoup:jsoup:1.11.1'
+    implementation 'com.google.android.play:core:1.6.1'//for new version updater
+
+    //AutoComplete for mention on comment.
+    implementation 'com.otaliastudios:autocomplete:1.1.0'
+
+
+
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+
+
+
+
+}

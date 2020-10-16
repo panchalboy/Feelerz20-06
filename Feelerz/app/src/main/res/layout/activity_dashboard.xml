@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Main_Layout"
+    tools:context=".DashboardActivity"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/Main_Btm_Nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/dividerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#AB000000"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#FFF"
+            android:padding="5dp"
+            android:layout_below="@+id/divider">
+
+        <ImageButton
+            android:id="@+id/Home"
+            android:layout_width="50dp"
+            android:layout_height="54dp"
+            android:background="@null" />
+
+            <!--<View
+                android:id="@+id/view1"
+                android:layout_width="50dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/Home"/>-->
+
+            <ImageButton
+            android:id="@+id/Message"
+            android:layout_width="50dp"
+            android:layout_height="54dp"
+            android:layout_toRightOf="@+id/Home"
+            android:layout_toLeftOf="@+id/Feeling"
+            android:background="@null"/>
+
+            <ImageButton
+            android:id="@+id/Feeling"
+            android:layout_width="50dp"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+                android:background="@null"/>
+
+            <!--<View
+                android:id="@+id/view2"
+                android:layout_width="50dp"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@+id/Feeling"/>-->
+
+            <ImageButton
+            android:id="@+id/Notification"
+            android:layout_width="50dp"
+            android:layout_height="54dp"
+            android:layout_toRightOf="@+id/Feeling"
+            android:layout_toLeftOf="@+id/Profile"
+                android:background="@null"/>
+
+            <ImageButton
+            android:id="@+id/Profile"
+            android:layout_width="50dp"
+            android:layout_height="54dp"
+            android:layout_alignParentRight="true"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

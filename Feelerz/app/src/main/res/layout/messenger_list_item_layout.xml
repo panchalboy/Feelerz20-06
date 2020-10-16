@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/profile_pic"
+        android:src="@drawable/default_profile"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ankit Singh"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/last_msg_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profile_pic"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:text="sample message"
+        android:textSize="13dp"
+        />
+
+    <TextView
+        android:id="@+id/time_stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="Yesterday"
+        android:layout_centerVertical="true"
+        />
+
+
+
+</RelativeLayout>

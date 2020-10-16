@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_PageActivity"
+    android:orientation="vertical"
+    android:background="#EBE5E5">
+
+    <RelativeLayout
+        android:id="@+id/R1"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="@drawable/im">
+
+        <Button
+            android:id="@+id/Profile_Edit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/profile_menu_icon_shape" />
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/or_username" />
+
+        <TextView
+            android:id="@+id/User_name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_pic"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="Ram Yadav"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/User_id_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/User_name_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/txt_id"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/Following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/User_id_txt"
+            android:layout_toLeftOf="@+id/Divider1"
+            android:text="123 Following"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/Divider1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/User_id_txt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/Followers"
+            android:text="|"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/Followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/User_id_txt"
+            android:layout_centerInParent="true"
+            android:text="290 Followers"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/Divider2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/User_id_txt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/Followers"
+            android:text="|"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/Feels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/User_id_txt"
+            android:layout_toRightOf="@+id/Divider2"
+            android:text="73 Feels"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/Gender_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Feels"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:text="Gender"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/Gender_options_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Gender_txt"
+            android:layout_marginLeft="105dp"
+            android:text="Male"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/Age_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Feels"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="115dp"
+            android:text="Age"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/Age_options_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Age_txt"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="120dp"
+            android:text="38"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/Bio_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Gender_options_txt"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="Electrical Engineer"
+            android:textColor="#FFF" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="10000dp"
+        android:layout_below="@+id/R1"
+        tools:listitem="@layout/post_layout"
+        />
+
+
+</RelativeLayout>-->
+
+</ScrollView>

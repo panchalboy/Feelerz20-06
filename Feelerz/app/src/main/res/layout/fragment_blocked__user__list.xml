@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Blocked_User_ListFragment"
+    android:clickable="true"
+    android:layout_above="@+id/Main_Btm_Nav">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_color">
+
+        <RelativeLayout
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/Back_Btn"
+                android:layout_width="40dp"
+                android:layout_height="44dp"
+                android:background="@drawable/back_btn_shape3"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/blockUserList_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="Block User"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <View
+                    android:id="@+id/Line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#CC000000"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pull_to_refresh"
+            android:layout_below="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+
+            <ListView
+                android:id="@+id/blockedUserList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="10dp"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                android:overScrollMode="always"
+                android:transcriptMode="normal"
+                tools:listitem="@layout/blocked_user_list" />
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

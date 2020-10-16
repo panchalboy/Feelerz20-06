@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/blockedUser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@android:color/white"
+    android:clickable="true"
+    android:background="@drawable/generic_profile_item_background" >
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.01dp"
+    android:background="#9E9E9E"/>
+    <RelativeLayout
+        android:id="@+id/openChatOfUser"
+        android:padding="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/ChatUserPic"
+            android:src="@drawable/default_profile" />
+
+        <TextView
+            android:id="@+id/ChatUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ChatUserPic"
+            android:layout_marginRight="10dp"
+            android:gravity="top"
+            android:text="Blocked User Name"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/UserLastMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ChatUserName"
+            android:layout_toRightOf="@+id/ChatUserPic"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@+id/LastTimeofMessage"/>
+
+        <TextView
+            android:id="@+id/LastTimeofMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Last week"
+            android:textSize="12sp"
+            android:textColor="@color/color_input_txt"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            tools:ignore="HardcodedText"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

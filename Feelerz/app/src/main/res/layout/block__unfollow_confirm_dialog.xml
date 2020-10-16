@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".UnfollowBlockDialog"
+    android:background="@android:color/transparent"
+    android:id="@+id/Confirm_layout"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/transparent" >
+
+        <RelativeLayout
+            android:id="@+id/upperOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search_box">
+
+            <TextView
+                android:id="@+id/BlockText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Block"
+                android:textSize="20sp"
+                android:textColor="@color/color_btn_txt"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/div"
+                android:layout_below="@+id/BlockText"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_input_txt"/>
+
+            <TextView
+                android:layout_below="@+id/div"
+                android:id="@+id/UnfollowText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Unfollow"
+                android:textSize="20sp"
+                android:textColor="@color/color_btn_txt"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Cancel_BTN"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/color_btn_txt"
+            android:background="@drawable/search_box"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:clickable="true"
+    android:layout_above="@+id/Main_Btm_Nav"
+    android:windowSoftInputMode="stateAlwaysHidden">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/background_color">
+
+            <TextView
+                android:id="@+id/Search_textview"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/Feel_layout_btn"
+                android:background="@drawable/search_box"
+                android:drawableLeft="@drawable/search_icon_shape"
+                android:gravity="center_vertical"
+                android:text="Search"
+                android:textColor="@color/color_input_txt"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/Feel_layout_btn"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:background="@drawable/logo"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Search_textview"
+                app:tabSelectedTextColor="@color/color_txt"
+                app:tabTextColor="@color/color_txt"
+                android:layout_marginBottom="2dp"
+                app:tabTextAppearance="@style/CustomTextAppearanceTab"
+                tools:ignore="UnknownId" />
+
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/relative_2" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
